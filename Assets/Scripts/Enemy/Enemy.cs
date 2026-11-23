@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            col.collider.GetComponent<PlayerHealth>()?.Die();
+            col.collider.GetComponent<PlayerHealth>()?.TakeHit(transform.position);
         }
     }
 }
